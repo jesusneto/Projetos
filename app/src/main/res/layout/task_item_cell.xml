@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/taskCellContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageButton
+            android:id="@+id/completeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/checkbox"
+            android:layout_weight="0.5"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:src="@drawable/unchecked_24" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:text="@string/place_holder" />
+
+        <TextView
+            android:id="@+id/dueTime"
+            android:layout_marginHorizontal="5dp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/place_holder" />
+
+        <Button
+            android:id="@+id/editTaskButton"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#FFC107"
+            android:layout_weight="1"
+            app:icon="@drawable/baseline_mode_edit_24"
+            app:iconSize="25dp" />
+
+        <Button
+            android:id="@+id/deleteTaskButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#E40E0E"
+            android:layout_weight="1"
+            android:text="X"
+            android:textSize="23sp"/>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
